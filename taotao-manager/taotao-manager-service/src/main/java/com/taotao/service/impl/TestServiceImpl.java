@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 public class TestServiceImpl implements TestService {
     @Autowired
     private TestMapper mapper;
+
     /**
      * 从数据库中获取当前的时间
      *
@@ -18,4 +19,5 @@ public class TestServiceImpl implements TestService {
     public String queryNow() {
         return mapper.queryNow();
     }
+
 }
